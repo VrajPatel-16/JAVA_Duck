@@ -1,3 +1,5 @@
+// Main.java 
+
 import java.util.Scanner;
 
 public class Main {
@@ -16,3 +18,25 @@ public class Main {
 
             int choice = scanner.nextInt();
             Duck duck = null;
+
+            switch (choice) {
+                case 1 -> duck = new MallardDuck();
+                case 2 -> duck = new RubberDuck();
+                case 3 -> duck = new DecoyDuck();
+                case 4 -> duck = new RedheadDuck();
+                case 5 -> running = false;
+                default -> System.out.println("Invalid choice. Try again.");
+            }
+
+            if (duck != null) {
+                duck.display();
+                duck.performFly();
+                duck.performSwim();
+                duck.performQuack();
+            }
+        }
+
+        System.out.println("Exiting Duck Simulation. Goodbye! 🦆");
+        scanner.close();
+    }
+}
