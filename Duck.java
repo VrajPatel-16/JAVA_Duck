@@ -12,3 +12,8 @@ public abstract class Duck {
         this.swimBehavior = swimBehavior;
         this.quackBehavior = quackBehavior;
     }
+
+    // Method to perform fly action
+    public void performFly() {
+        flyBehavior.fly();
+    }
