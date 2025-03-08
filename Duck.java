@@ -22,3 +22,12 @@ public abstract class Duck {
     public void performSwim() {
         swimBehavior.swim();
     }
+
+    // Method to perform quack action
+    public void performQuack() {
+        quackBehavior.quack();
+    }
+
+    // Abstract method to be implemented by specific ducks
+    public abstract void display();
+}
