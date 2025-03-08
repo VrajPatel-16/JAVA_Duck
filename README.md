@@ -1,5 +1,5 @@
 # 🦆 Duck Simulation Program
-### **Object-Oriented Design | Strategy Pattern**
+
 
 ## 📌 Description
 This program simulates different types of ducks and their behaviors using the **Strategy Pattern**. It allows dynamic assignment of behaviors such as **flying, swimming, and quacking**.
@@ -21,55 +21,55 @@ Each duck can:
 
 ## 📂 Class & Interface Overview
 
-### **1️⃣ FlyBehavior.java** (Interface)  
+### **1 FlyBehavior.java** (Interface)  
 Defines `fly()` method for different flying behaviors.  
 
-### **2️⃣ Fly.java** (Class)  
+### **2 Fly.java** (Class)  
 Implements `FlyBehavior` → `"I can fly high in the sky!"`  
 
-### **3️⃣ NotFly.java** (Class)  
+### **3️ NotFly.java** (Class)  
 Implements `FlyBehavior` → `"I cannot fly."`  
 
-### **4️⃣ SwimBehavior.java** (Interface)  
+### **4️ SwimBehavior.java** (Interface)  
 Defines `swim()` method for different swimming behaviors.  
 
-### **5️⃣ Swim.java** (Class)  
+### **5️ Swim.java** (Class)  
 Implements `SwimBehavior` → `"I can swim in the water!"`  
 
-### **6️⃣ Float.java** (Class)  
+### **6️ Float.java** (Class)  
 Implements `SwimBehavior` → `"I float on the water."`  
 
-### **7️⃣ Drown.java** (Class)  
+### **7️ Drown.java** (Class)  
 Implements `SwimBehavior` → `"I sink in the water..."`  
 
-### **8️⃣ QuackBehavior.java** (Interface)  
+### **8️ QuackBehavior.java** (Interface)  
 Defines `quack()` method for different quacking behaviors.  
 
-### **9️⃣ Quack.java** (Class)  
+### **9️ Quack.java** (Class)  
 Implements `QuackBehavior` → `"Quack! Quack!"`  
 
-### **🔟 MuteQuack.java** (Class)  
+### **10 MuteQuack.java** (Class)  
 Implements `QuackBehavior` → `"..."`  
 
-### **1️⃣1️⃣ Squeak.java** (Class)  
+### **11 Squeak.java** (Class)  
 Implements `QuackBehavior` → `"Squeak! Squeak!"`  
 
-### **1️⃣2️⃣ Duck.java** (Abstract Class)  
+### **12 Duck.java** (Abstract Class)  
 Defines common behaviors and structure for all ducks.  
 
-### **1️⃣3️⃣ MallardDuck.java** (Class)  
+### **13 MallardDuck.java** (Class)  
 ✅ Flies, ✅ Swims, ✅ Quacks  
 
-### **1️⃣4️⃣ RubberDuck.java** (Class)  
+### **1️4 RubberDuck.java** (Class)  
 ❌ Cannot fly, ✅ Floats, 🔊 Squeaks  
 
-### **1️⃣5️⃣ DecoyDuck.java** (Class)  
+### **15 DecoyDuck.java** (Class)  
 ❌ Cannot fly, ❌ Sinks, ❌ No quacking  
 
-### **1️⃣6️⃣ RedheadDuck.java** (Class)  
+### **1️6 RedheadDuck.java** (Class)  
 ✅ Flies, ✅ Swims, ✅ Quacks  
 
-### **1️⃣7️⃣ Main.java** (Entry Point)  
+### **17 Main.java** (Entry Point)  
 - Displays **Menu**  
 - Allows **User Selection**  
 - Runs **Duck Behaviors**  
